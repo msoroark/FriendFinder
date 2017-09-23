@@ -141,7 +141,7 @@
 		<h4> I hate to break it to you but what people call ‘love’ is just a chemical reaction that compels animals to breed. It hits hard, Morty, then it slowly fades, leaving you stranded in a failing marriage. I did it. Your parents are gonna do it. Break the cycle, Morty. Rise above. Focus on science.</h4>
 	 	<select data-placeholder="" class="chosen-select" id="q10">
 	 		<option value=""></option>
-            <option value="1">1 (Oh, geeze rick.)</option>
+            <option value="1">1 (Oh, geeze Rick.)</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -154,6 +154,7 @@
 		<!-- Submit Button -->
 		<button type="submit" data-target="resultsModal" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
  Submit</button>
+1
 
 		<hr>
 	    <footer class="footer">
@@ -176,7 +177,7 @@
 	      </div>
 	      <div class="modal-body">
 	        <h2 id="matchName"></h2>
-	        <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+	        <img id="matchImg" src="" alt="">
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -202,7 +203,7 @@
 
     // Capture the form inputs 
     $("#submit").on("click", function(){
-
+    	console.log("Hey there");
     	// Form validation
     	function validateForm() {
 		  var isValid = true;
