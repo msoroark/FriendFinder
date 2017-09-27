@@ -23,16 +23,10 @@ module.exports = function(app) {
 
             //Grab scores. 
             for (var i = 0; i < newFriend.scores.length; i++) {
+                console.log(newFriend.scores[i]);
 
-                if (newFriend.scores[i] == ("1 (Strongly Disagree)") || ("1 (Oh, geeze Rick.)")) {
-                    newFriend.scores[i] = 1;
-
-                } else if (newFriend.scores[i] == ("5 (Strongly Agree)") || ("5 (Wubba lubba dub dub!)")) {
-                    newFriend.scores[i] = 5;
-
-                } else {
                     newFriend.scores[i] = parseInt(newFriend.scores[i]);
-                }
+    
             }
 
             var differencesArray = [];
